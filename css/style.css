@@ -1,0 +1,822 @@
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+.parent{
+    width:80%;
+    margin: auto;
+}
+.logo-div{
+    border-radius: 50%;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    /* background-color: #85CAE6; */
+    background-color: #041e2e;
+    position: fixed;
+    overflow:auto;
+    top:0;
+    left: 0;
+    z-index: 30;
+    opacity: 0.8;
+}
+
+.header img{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.list{
+    list-style-type: none;
+    float: right;
+}
+.list li {
+display: inline-block;
+font-size: 20px;
+}
+.list li a {
+    text-decoration: none;
+    color: #c2cfde;
+    margin-left: 25px;
+ 
+}
+.header span{
+font-size: x-large;
+margin-top: 13px;
+margin-left: 10px;
+float: left;
+color: #c2cfde;
+}
+.section1{
+     height: 100vh;
+    position: relative;
+    background-image: url(../imgs/caucasian-female-singer-portrait-isolated-blue-studio-background-neon-light-beautiful-female-model-bright-dress-with-microphone-concept-human-emotions-facial-expression-ad-music-art.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2)
+}
+.textsection1{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:65%;
+    color: #fff;
+}
+/* .textsection1 h1{
+    color: white;
+} */
+.btn {
+    width:150px ;
+    height: 53px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+  }
+  .sec1b:hover {
+    background-color: rgb(214, 218, 227);
+  }
+  .sec2b:hover{
+    background-color: #284884;
+  }
+.sec1b{
+    background-color: white;
+    margin-right: 10px;
+  }
+.sec2b{
+    background-color: #173366;
+    color: white;
+  }
+.padding{
+    padding: 120px 0px;
+
+  }
+.section2{
+    position: relative;
+} 
+
+h2 {
+    font-size: 35px;
+  text-transform: capitalize;
+  text-align:center;
+}
+
+.secline {
+    width: 150px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+}
+
+.sec2-content{
+    text-align: center;
+    overflow: hidden;
+    margin:auto; 
+}
+.sec2div {
+    width: 327.55px;
+    height: 223.2px;
+    border: 2px solid rgb(158, 157, 157);
+    float: left;
+    margin:80px 50px;
+    position: relative;
+}
+.sec2div.center{
+    border: 2px solid rgb(158, 157, 157);
+    float: left;
+    margin: 80px 0px;
+}
+.icon{
+    font-size: 32px;
+    margin-top: 5%;
+    color: #195189;
+}
+.sec2wel{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+.sec2par{
+    color: #899;
+}
+.sec2-content a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #015B73;
+}
+.sec2div:hover .sec2wel{
+    color: #ffffff;
+     transition: color 0.5s;
+}
+.sec2div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: #050404;
+    opacity: 0;
+    transition: 0.5s;
+}
+.sec2div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+.play-h2{
+    text-align: center;
+    font-size: xx-large;
+}
+/* .playline{
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: black;
+    display:block;
+} */
+.features{
+    background-color: #f5fcff;
+}
+.container{
+    width: 80%;
+    margin-left:200px;
+    margin-top: 20px;
+overflow: hidden;
+}
+/* .play-divs{
+overflow: hidden;
+} */
+.play-div{
+    width:30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    margin-left: 0;
+}
+/* .play-div.m{
+    /* width: 30%; */
+    /* float: left; */
+    /* padding: 20px; */
+/* } */ 
+.play-div img{
+    width:70%;
+}
+.play-layer{
+position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 73%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+.play-div:hover .play-layer{
+    opacity: 1;
+    visibility: visible;
+}
+/* .play-layer .layer-text{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 80%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+} */
+.layer-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  visibility: hidden;
+}
+.play-layer .play-h3{
+    color: #00A9AC;
+    text-transform: uppercase;
+    display: block;
+    /* margin-bottom: 5px; */
+    position: relative;
+    /* top: 10px; */
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+}
+.play-layer .play-p{
+    font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 1s ,opacity .5s;
+  width: auto;
+}
+.play-layer a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #00A9AC;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  border-radius: 50%;
+  color: #000;
+  visibility: hidden;
+  transition: top 1s,
+  opacity .5s;
+  margin-top: 20px;
+
+}
+.play-div:hover .play-h3,
+.play-div:hover .play-p,
+.play-div:hover .play-layer a
+{
+    top:0;
+    opacity: 1;
+    visibility: visible;
+}
+.play-layer a i{
+    line-height: 40px;
+}
+.offerhead{
+    margin-bottom:50px;
+}
+.offer-div{
+    /* width: 20%; */
+    width: 250px;
+    height: 150px;
+    float:left;
+    border: 1px solid #a8a8a8;
+    margin-bottom: 20px;
+    padding: 20px 15px 20px 60px;
+    position: relative;
+    /* overflow:visible; */
+}
+.offer-div.m{
+    margin: 0%  5%;
+    /* width: 20%; */
+    width: 250px;
+    height: 150px;
+    float:left;
+    border: 1px solid #a8a8a8;
+    /* margin-bottom: 20px; */
+    padding: 20px 15px 20px 70px;
+    /* position: relative; */
+    /* overflow:visible; */
+}
+.offer-div i{
+    position: absolute;
+    left:15px;
+    top:40px;
+    color:#195189;
+    font-size:xx-large;
+}
+.offer-title{
+    font-size:x-large;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.offer-p{
+    text-transform: capitalize;
+ margin-bottom: 15px;
+ margin-left: 20px;
+ line-height: 1.6;
+ color: #999;
+}
+.offer-div:hover .offer-title{
+    color: #ffffff;
+     transition: color 0.5s;
+}
+.offer-div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: #050404;
+    opacity: 0;
+    transition: 0.5s;
+}
+.offer-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+/* .go-container{
+    margin-top: 120px;
+    background-color: #f9f9f9;
+
+} */
+.go {
+    background-color: #f9f9f9;
+}
+.gohead .secline{
+    margin-left: 28px;
+}
+.gopre{
+    width:40%;
+    float:left;
+    margin-left: 150px;
+}
+.clear{
+    clear: both;
+}
+.gohead{
+    margin-bottom: 30px;
+}
+.gohead .sec-title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 350px;
+}
+.go-p{
+width: 500px;
+  color: #7f7d7d;
+  line-height: 1.4;
+  font-size: 18px;
+  margin-left: 25px;
+}
+.go-list {
+    list-style:none;
+    padding: 20px;
+}
+.go-list li i{
+    color: #195189;
+    padding: 3px;
+}
+.go-list li{
+    margin-bottom: 10px;
+    color: #7f7d7d;
+}
+.go-img{
+    float: left;
+}
+.go-img .go{
+    width: 500px;
+    height: 450px;
+}
+.smallcircle{
+    text-align:center;
+    margin-top: 430px;
+    margin-right:100px ;
+}
+.smallcircle li{
+    width:15px;
+    height:15px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px;
+    border-radius: 50%;
+}
+.smallcircle li.f{
+    background-color: #6195ff;
+}
+.smallcircle li:hover{
+    background-color: #6195ff;
+}
+.nums {
+    position: relative;
+    background-image: url(../imgs/medium-shot-man-with-headphones_23-2148937693.avif);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.num-divs{
+    overflow:hidden;
+    padding-top: 110px;
+    padding-right: px;
+    margin-right: 60px;
+}
+.num-div {
+    width: 25%;
+    float: left;
+    text-align:center;
+    /* line-height: 8px; */
+}
+.num-div .icon{
+    color:#195189;
+}
+.num-div-h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.num-div-sp{
+    color: #fff;
+}
+
+
+.plushead{
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+.plus-div {
+    width: 250px;
+    height: 400px;
+    border: 2px solid #0D3762;
+    float: left;
+    margin-left:80px;
+    position: relative;
+}
+.plus-div .m{
+    margin: 0px 50px;
+}
+.plus-p{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(97, 96, 96);
+    margin-top: 30px;
+}
+.plus-circle{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border:solid 2px #0D3762;
+margin: auto;
+}
+.pcircle{
+    text-align: center;
+    font-size: large;
+    font-weight:400;
+    line-height: 30px;
+}
+.pcircle span{
+    text-align: center;
+    font-size: 50px;
+    /* font-weight: 00; */
+}
+.pdis{
+    text-align: center;
+    font-size:medium;
+    font-weight:300;
+    color: rgb(96, 94, 94);
+    line-height: 30px;
+}
+.pdisd{
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-left: 45px;
+    border: 1px solid #015B73;
+    color: rgb(52, 52, 52);
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+}
+.plus-div .button1{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 45px;
+    border: 1px solid #015B73;
+    color: rgb(54, 54, 57);
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+}
+.plus-div:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0.5;
+    background-color: #0b0c0c;
+}
+.plus-div:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.plus-div:hover .plus-p{
+    color: #374758;
+}
+.plus-div:hover .pcircle{
+    color: #5d86e7;
+    transition: 1s;
+}
+.artist{
+    position: relative;
+    background-image: url(../imgs/caucasian-female-singer-portrait-isolated-blue-studio-background-neon-light-beautiful-female-model-bright-dress-with-microphone-concept-human-emotions-facial-expression-ad-music-art.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.artist-divs{
+    overflow: hidden;
+    width: 100%;
+    /* margin: auto; */
+}
+.artist-div{
+    float: left;
+    width: 50%;
+    color: #fff;
+    margin-bottom: 110px;
+    margin-left: -20px;
+}
+.artist-pic{
+    padding:90px 20px 10px 150px;
+    position:relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+ }
+ .artist-pic h3{
+     margin: auto;
+ }
+ .artist-pic .art-img{
+    position: absolute;
+    top: 82px;
+    left: 65px;
+    border-radius: 50%;
+ }
+ .artist-div p{
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-left: 76px;
+    font-size: 14px;
+    padding-top:-400px;
+ }
+ .artist-pic span{
+    color: #00A9AC;
+    margin-bottom: -20px;
+ }
+
+
+
+ .casthead{
+    margin-bottom: 70px;
+ }
+ .castcon{
+    margin-left: 165px;
+ }
+ .cast-div {
+    float: left;
+    background-color: #80b2ba;
+    width: 26%;
+    padding: 14px  19px;
+    text-align: center;
+    position: relative;
+}
+.mid{
+    margin: 0px  5%;
+}
+
+.cast-pic {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    
+}
+.cast-pic  img {
+    width: 100%;
+}
+.cast-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5) ;
+    visibility: hidden;
+    opacity: 0; 
+    transition: 1s;    
+}
+.cast-div:hover  .cast-overlay {
+    opacity: 0.7 ;
+    visibility: visible;
+    
+}
+.cast-overlay  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #80b2ba;
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto;
+}
+.cast-overlay  a  i  {
+    line-height: 40px ;
+}
+.cast-div::after {
+    position: absolute;
+    content: "";
+    width: 100% ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0,0.6) ;
+    opacity: 0;
+    transition: 1s;
+}
+.cast-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.cast-div:hover .cast-h2{
+    color:#fff;
+    transition:  .5s;
+}
+.cast-div:hover .cast-sp{
+    color: #0D3762;
+    transition: 1s;
+}
+
+
+.news{
+    overflow: hidden;
+    /* background-color: #f8f8f8; */
+    /* margin-right: 110px; */
+    margin-top: 40px; 
+    width: 100vw;
+    /* margin: auto; */
+    position: relative;
+}
+.new-div{
+    float: left;
+    /* width: 30%; */
+    /* margin-right: 0px; */
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;
+    /* margin: auto; */
+}
+.midd{
+    margin: 0px 100px;
+}
+.new-pic{
+    width: 100%;
+    /* margin-left: 23px; */
+}
+/* .blog-list{
+    list-style: none;
+    margin: 10px 0;
+}
+.blog-list li{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 5px;
+}
+*/
+ .new-text i{
+    color: #6195ff;
+    font-size: 10px;
+} 
+.new-text span{
+    font-size: 13px;
+}
+.new-text{
+    padding: 20px;
+}
+.new-h3{
+    font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 25px;
+}
+.new-p{
+    color: #686464;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.new-link{
+    color: #6195ff;
+    text-decoration: none;
+}
+.new-div.mid{
+    margin: 0 5%;
+}
+.new-div:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color: #6195ff;
+}
+.new-div:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.footer{
+    height: 300px;
+    background-color: #25405d;
+    text-align: center;
+    padding-right:50px ;
+}
+.foot-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+.foot-ul {
+    list-style: none;
+    padding-right: 40px;
+    /* padding-top: 10px; */
+}
+.foot-ul li{
+    display: inline-block;
+    background-color: #6195ff;
+    width:50px;
+    height: 50px;
+    position: relative;
+    /* z-index: 1; */
+    border-radius: 50%;
+}
+.foot-ul li a {
+    display: block;
+    line-height: 50px;
+    padding-top: 5px;
+}
+.foot-ul li a i{
+    color: #fff;
+    font-size: 25px;
+}
+.foot-ul li:hover{
+    background-color: #4971c1;
+}
+.footer p{
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
